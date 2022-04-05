@@ -1,5 +1,5 @@
 # shoppingcart
-Demonstrating a simple shopping cart
+Demonstrating a simple shopping cart - it was used https://start.spring.io to generate the this project
 
 Basically you just need to pull the project and import it as Maven Project, then it should be good to be executed.
 
