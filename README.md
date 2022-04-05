@@ -12,6 +12,6 @@ The following code uses connection to H2 database + JPA. You can find the H2 con
 
 The method findTopByOrderByClientIdDesc from cartRepository, I ma using native query only to demonstrate possibilities as I could also use the conventiona HQL.
 
-Some improvements that could be done is to avoid register products with same name and same category; transform the controllers into web controllers(to receive web requests, search product/cients,cart by id, etc)
+Some improvements that could be done is to avoid register products with same name and same category; transform the controllers into web controllers(to receive web requests, search product/cients,cart by id, include a DTO for the cart, etc)
 
 To build this project I have spend between 4 - 5 hours working a bit on different days
