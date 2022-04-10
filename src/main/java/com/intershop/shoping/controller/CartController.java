@@ -1,13 +1,16 @@
 package com.intershop.shoping.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.intershop.shoping.entity.dto.HandleCartDto;
 import com.intershop.shoping.exception.NotFoundException;
 import com.intershop.shoping.service.CartService;
 
-@Controller
+
+@RestController
+@RequestMapping(value = "/cart")
 public class CartController {
 	
 	@Autowired

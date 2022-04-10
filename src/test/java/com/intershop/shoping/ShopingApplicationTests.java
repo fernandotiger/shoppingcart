@@ -126,7 +126,7 @@ class ShopingApplicationTests {
 	 }
 	
 	@Test
-	@Order(6)
+	@Order(7)
 	void test_add_product_and_start_order() { 
 		
 		ProductDto mouse = productController.save(new ProductDto("mouse", "accessory for computer", ProductCategoryEnum.ELECTRONIC, BigDecimal.valueOf(20)));

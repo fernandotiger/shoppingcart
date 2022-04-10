@@ -12,7 +12,6 @@ import com.intershop.shoping.entity.CartEntity;
 public interface CartRepository extends JpaRepository<CartEntity, Long>{
 	
 	
-	@Query(nativeQuery = true,
-            value = "SELECT TOP 1 * FROM cart e WHERE client_id = ?1 AND status = 'DRAFT'  ORDER BY e.id DESC")
+	@Query("SELECT c FROM CartEntity c where c.client.id = ?1 AND status = 'DRAFT'  ")
 	Optional<CartEntity> findTopByOrderByClientIdDesc(Long clientId);
 }
